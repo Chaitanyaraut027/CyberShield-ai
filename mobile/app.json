@@ -16,6 +16,7 @@
       }
     },
     "android": {
+      "package": "com.cybershield.ai",
       "softwareKeyboardLayoutMode": "resize",
       "adaptiveIcon": {
         "backgroundColor": "#0b0f17"
