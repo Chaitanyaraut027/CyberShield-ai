@@ -1,0 +1,25 @@
+# Python / Backend
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+backend/.venv/
+.venv/
+env/
+venv/
+ENV/
+*.db
+cybershield.db
+backend/app/ml/model.joblib
+
+# Node / Frontend / Mobile
+node_modules/
+dist/
+build/
+.expo/
+*.log
+
+# Env
+.env
+.env.local

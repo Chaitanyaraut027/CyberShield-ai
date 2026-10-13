@@ -1,0 +1,36 @@
+{
+  "expo": {
+    "name": "CyberShield AI",
+    "slug": "cybershield-ai",
+    "version": "2.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "backgroundColor": "#0b0f17"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "CyberShield AI uses the camera to scan QR codes for scams and malicious links."
+      }
+    },
+    "android": {
+      "softwareKeyboardLayoutMode": "resize",
+      "adaptiveIcon": {
+        "backgroundColor": "#0b0f17"
+      },
+      "permissions": [
+        "android.permission.CAMERA"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "CyberShield AI uses the camera to scan QR codes for scams and malicious links."
+        }
+      ]
+    ]
+  }
+}
