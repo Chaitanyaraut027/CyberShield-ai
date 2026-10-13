@@ -8,6 +8,7 @@ import {
   ActivityIndicator,
   KeyboardAvoidingView,
   Platform,
+  Image,
 } from "react-native";
 import { StatusBar } from "expo-status-bar";
 import { initStorage, TokenStore } from "./src/api";
@@ -43,7 +44,11 @@ export default function App() {
     return (
       <View style={appStyles.splash}>
         <StatusBar style="light" />
-        <Text style={{ fontSize: 50, marginBottom: 12 }}>🛡️</Text>
+        <Image
+          source={require("./assets/icon.png")}
+          style={{ width: 110, height: 110, borderRadius: 24, marginBottom: 16 }}
+          resizeMode="cover"
+        />
         <Text style={appStyles.splashTitle}>
           Cyber<Text style={{ color: THEME.brand }}>Shield</Text> AI
         </Text>
@@ -104,8 +109,13 @@ export default function App() {
               <Text style={{ color: THEME.bone, fontSize: 16, fontWeight: "700" }}>←</Text>
             </TouchableOpacity>
           )}
+          <Image
+            source={require("./assets/icon.png")}
+            style={{ width: 28, height: 28, borderRadius: 7, marginRight: 8 }}
+            resizeMode="cover"
+          />
           <Text style={appStyles.brandTitle}>
-            🛡️ Cyber<Text style={{ color: THEME.brand }}>Shield</Text>
+            Cyber<Text style={{ color: THEME.brand }}>Shield</Text>
           </Text>
         </View>
 

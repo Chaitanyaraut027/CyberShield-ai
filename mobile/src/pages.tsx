@@ -9,6 +9,7 @@ import {
   Alert,
   Platform,
   KeyboardAvoidingView,
+  Image,
 } from "react-native";
 import { CameraView, useCameraPermissions } from "expo-camera";
 import * as ImagePicker from "expo-image-picker";
@@ -73,12 +74,17 @@ export function AuthScreen({ onAuth }: { onAuth: (u: any) => void }) {
         showsVerticalScrollIndicator={false}
       >
       <View style={authStyles.header}>
+        <Image
+          source={require("../assets/icon.png")}
+          style={{ width: 90, height: 90, borderRadius: 22, alignSelf: "center", marginBottom: 14 }}
+          resizeMode="cover"
+        />
         <View style={authStyles.badge}>
           <Text style={authStyles.badgeDot}>●</Text>
           <Text style={authStyles.badgeText}>LIVE THREAT SHIELD</Text>
         </View>
         <Text style={authStyles.title}>
-          🛡️ Cyber<Text style={{ color: THEME.brand }}>Shield</Text> AI
+          Cyber<Text style={{ color: THEME.brand }}>Shield</Text> AI
         </Text>
         <Text style={authStyles.sub}>
           Real-time threat protection for malicious links, SMS scams, and fraudulent QR codes.
