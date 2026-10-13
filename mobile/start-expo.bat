@@ -1,6 +1,6 @@
 @echo off
 set "PATH=C:\Program Files\nodejs;%PATH%"
-cd /d "c:\Users\Aditya Gholve\Downloads\cybershield-ai\cybershield-ai\mobile"
+cd /d "%~dp0"
 echo ========================================================
 echo   Starting CyberShield AI Mobile App (Expo SDK 57)
 echo ========================================================
