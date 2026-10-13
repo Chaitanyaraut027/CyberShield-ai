@@ -3,7 +3,7 @@ import { localApi, ApiError } from "./offline/engine";
 
 let cachedToken: string | null = null;
 let cachedUser: any = null;
-let cachedBase: string = "";
+let cachedBase: string = "https://cybershield-ai-1-apmx.onrender.com";
 
 const TOKEN_KEY = "cs_token";
 const USER_KEY = "cs_user";

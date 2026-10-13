@@ -7,7 +7,7 @@ export const TokenStore = {
   user: () => { try { return JSON.parse(localStorage.getItem("cs_user") || "null"); } catch { return null; } },
   setUser: (u: any) => localStorage.setItem("cs_user", JSON.stringify(u)),
 };
-export const getBase = () => (localStorage.getItem("cs_api") || (import.meta as any).env?.VITE_API_URL || "").replace(/\/$/, "");
+export const getBase = () => (localStorage.getItem("cs_api") || (import.meta as any).env?.VITE_API_URL || "https://cybershield-ai-1-apmx.onrender.com").replace(/\/$/, "");
 export const setBase = (v: string) => (v ? localStorage.setItem("cs_api", v) : localStorage.removeItem("cs_api"));
 
 /** True inside the Android/iOS app (Capacitor). */
